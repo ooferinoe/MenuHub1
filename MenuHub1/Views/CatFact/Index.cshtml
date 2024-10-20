@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Cat Fact</title>
+</head>
+<body>
+    <h1>Here's a Random Cat Fact for You!</h1>
+
+    @if (Model != null && Model.data != null && Model.data.Length > 0)
+    {
+        <div>
+            <p>@Model.data[0]</p>
+        </div>
+    }
+    else
+    {
+        <p>Sorry, we couldn't retrieve a cat fact at this time. Please try again later.</p>
+    }
+
+</body>
+</html>
